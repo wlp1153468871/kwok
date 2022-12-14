@@ -106,6 +106,7 @@ func setKwokConfigurationDefaults(config *v1alpha1.KwokConfiguration) *v1alpha1.
 	return config
 }
 
+//nolint:gocyclo
 func setKwokctlConfigurationDefaults(config *v1alpha1.KwokctlConfiguration) *v1alpha1.KwokctlConfiguration {
 	if config == nil {
 		config = &v1alpha1.KwokctlConfiguration{}

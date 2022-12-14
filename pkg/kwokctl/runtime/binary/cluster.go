@@ -124,6 +124,7 @@ func (c *Cluster) Install(ctx context.Context) error {
 	return nil
 }
 
+//nolint:gocyclo
 func (c *Cluster) Up(ctx context.Context) error {
 	conf, err := c.Config(ctx)
 	if err != nil {
